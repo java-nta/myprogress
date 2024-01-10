@@ -155,6 +155,9 @@ const Usermanager = () => {
               </h2>
             }
           >
+            <p className="border-2 rounded-md border-red-500 text-red-500 p-2 w-fit">
+              No backend service
+            </p>
             <p>You have the freedom to manage users.</p>
             <Toastcore
               icon={<FaCheck />}

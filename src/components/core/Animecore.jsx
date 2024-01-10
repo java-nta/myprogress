@@ -27,7 +27,7 @@ const Animecore = ({ title, img, episodes, description, current }) => {
     // </NavLink>
     <div
       onClick={toggleOptions}
-      className="relative cursor-pointer w-[350px] h-[350px] shadow-lg  rounded-2xl smooth-transition dark:bg-dark-component"
+      className="relative cursor-pointer w-[350px] h-[350px] overflow-hidden shadow-lg  rounded-2xl smooth-transition dark:bg-dark-component "
     >
       <div className="flex z-40 gap-2 absolute top-0 p-2 text-white">
         <div className="flex items-center gap-1 bg-dark-background p-1 rounded-lg">
@@ -71,13 +71,16 @@ const Animecore = ({ title, img, episodes, description, current }) => {
         </button>
       </div>
       <img
-        src={img}
+        src={process.env.PUBLIC_URL + img}
         alt="anime"
-        className="z-50 object-cover h-[60%] w-full smooth-transition hover:scale-105 hover:rounded-none rounded-t-2xl"
+        className="z-50 object-cover h-[200px] w-full smooth-transition hover:scale-105 hover:rounded-none rounded-t-2xl"
       />
       <h2 className="font-medium text-lg p-1">{title}</h2>
       <p
-        className={classes("text-sm px-2 overflow-auto h-[30%]", textDirection)}
+        className={classes(
+          "text-sm px-2 overflow-hidden smooth-transition",
+          textDirection
+        )}
       >
         {description}
       </p>

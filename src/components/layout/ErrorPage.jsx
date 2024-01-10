@@ -10,10 +10,11 @@ const ErrorPage = ({ code, message, icon, style, erroIcon }) => {
   return (
     <div
       className={classes(
-        "flex flex-col items-center h-screen p-10 gap-5",
+        "flex flex-col relative items-center h-screen p-10 gap-5",
         isDarkMode ? "dark" : "light"
       )}
     >
+
       <h1 className="text-2xl font-bold">
         {code}
         <span className="dark:text-white">{erroIcon}</span>

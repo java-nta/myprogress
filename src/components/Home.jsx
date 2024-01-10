@@ -7,12 +7,7 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <Page title={"Home"}>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
-        harum pariatur omnis explicabo eos assumenda! Ad, voluptatem saepe.
-        Dignissimos delectus quidem architecto molestias reprehenderit
-        voluptatem aliquam enim doloribus suscipit?
-      </p>
+      <p>This project was developed using the following Technology:</p>
       <div className="flex flex-wrap justify-center gap-5 my-5">
         <div className="w-full md:w-96">
           <NavLink to={"https://spring.io"} target="_blank">

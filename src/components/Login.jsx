@@ -66,7 +66,7 @@ const Login = () => {
             >
               Login
             </button>
-            <NavLink to={"/signup"}>
+            <NavLink to={process.env.PUBLIC_URL + "/signup"}>
               <button
                 type="button"
                 className="w-full smooth-transition text-gray-800 border-2 border-gray-800 font-medium rounded-md py-1.5 hover:scale-95 hover:bg-gray-800 hover:text-white"

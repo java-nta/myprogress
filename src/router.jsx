@@ -10,7 +10,7 @@ import AnimeTracker from "./components/AnimeTracker";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: process.env.PUBLIC_URL + "/",
     element: <App />,
     children: [
       {
@@ -23,14 +23,14 @@ export const router = createBrowserRouter([
           },
           {
             path: "",
-            element: <Navigate to="/home" />,
+            element: <Navigate to={process.env.PUBLIC_URL + "/home"} />,
           },
           {
             path: "usermanager",
             element: <Usermanager />,
           },
           {
-            path: "/animetracker",
+            path: "animetracker",
             element: <AnimeTracker />,
           },
         ],
@@ -38,11 +38,11 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "/login",
+    path: process.env.PUBLIC_URL + "/login",
     element: <Login />,
   },
   {
-    path: "/signup",
+    path: process.env.PUBLIC_URL + "/signup",
     element: <SignUp />,
   },
   {

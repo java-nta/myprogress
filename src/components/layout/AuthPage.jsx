@@ -35,13 +35,16 @@ const AuthPage = ({ title, message, children }) => {
           <span class="sr-only">Loading...</span>
         </div>
       ) : (
-        <div className="flex flex-col bg-white border border-gray-200 p-4 rounded-lg w-[350px]">
+        <div className="flex flex-col relative bg-white border border-gray-200 p-4 rounded-lg w-[350px]">
+          <p className="border-2  rounded-md border-red-500 text-red-500 p-2 w-fit cursor-pointer smooth-transition hover:bg-red-500 hover:text-white">
+            No backend service
+          </p>
           <h2 className="font-bold text-[36px] ">{title}</h2>
           <p className="text-gray-400 my-3">{message}</p>
           <div className="flex flex-col">
             {children}
             <div>
-              <NavLink to={"/home"}>
+              <NavLink to={process.env.PUBLIC_URL + "/home"}>
                 <button
                   type="button"
                   className="w-full smooth-transition bg-red-400 text-white  font-medium rounded-md py-2 hover:scale-95 hover:bg-gray-800 hover:text-white"

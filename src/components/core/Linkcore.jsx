@@ -8,7 +8,7 @@ const Linkcore = ({ text, url, icon, clickhandler = () => {}, style = {} }) => {
     <>
       {url ? (
         <NavLink
-          to={url}
+          to={process.env.PUBLIC_URL + url}
           className={classes(
             " flex items-center border-2 rounded-md border-transparent gap-2 px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-100  hover:scale-105 dark:hover:bg-dark-backgroundL dark:hover:border-dark-background",
             isActive &&
