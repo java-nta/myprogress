@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/myprogress/static/css/main.87503526.css",
+    "main.js": "/myprogress/static/js/main.3a9d57c2.js",
+    "index.html": "/myprogress/index.html",
+    "main.87503526.css.map": "/myprogress/static/css/main.87503526.css.map",
+    "main.3a9d57c2.js.map": "/myprogress/static/js/main.3a9d57c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87503526.css",
+    "static/js/main.3a9d57c2.js"
+  ]
+}
