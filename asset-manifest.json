@@ -1,13 +1,39 @@
 {
   "files": {
-    "main.css": "/myprogress/static/css/main.87503526.css",
-    "main.js": "/myprogress/static/js/main.3a9d57c2.js",
+    "main.css": "/myprogress/static/css/main.98abf5a5.css",
+    "main.js": "/myprogress/static/js/main.4a408d0b.js",
+    "reactPlayerYouTube.js": "/myprogress/static/js/reactPlayerYouTube.83422770.chunk.js",
+    "reactPlayerSoundCloud.js": "/myprogress/static/js/reactPlayerSoundCloud.cb15c334.chunk.js",
+    "reactPlayerVimeo.js": "/myprogress/static/js/reactPlayerVimeo.e0cd3ac1.chunk.js",
+    "reactPlayerFacebook.js": "/myprogress/static/js/reactPlayerFacebook.70ff6081.chunk.js",
+    "reactPlayerStreamable.js": "/myprogress/static/js/reactPlayerStreamable.a4a2d607.chunk.js",
+    "reactPlayerWistia.js": "/myprogress/static/js/reactPlayerWistia.042bd77c.chunk.js",
+    "reactPlayerTwitch.js": "/myprogress/static/js/reactPlayerTwitch.4a49ad3b.chunk.js",
+    "reactPlayerDailyMotion.js": "/myprogress/static/js/reactPlayerDailyMotion.b71288ba.chunk.js",
+    "reactPlayerMixcloud.js": "/myprogress/static/js/reactPlayerMixcloud.b00979d5.chunk.js",
+    "reactPlayerVidyard.js": "/myprogress/static/js/reactPlayerVidyard.2a41570b.chunk.js",
+    "reactPlayerKaltura.js": "/myprogress/static/js/reactPlayerKaltura.d75b0fbd.chunk.js",
+    "reactPlayerFilePlayer.js": "/myprogress/static/js/reactPlayerFilePlayer.1316f7a6.chunk.js",
+    "reactPlayerPreview.js": "/myprogress/static/js/reactPlayerPreview.65590bad.chunk.js",
     "index.html": "/myprogress/index.html",
-    "main.87503526.css.map": "/myprogress/static/css/main.87503526.css.map",
-    "main.3a9d57c2.js.map": "/myprogress/static/js/main.3a9d57c2.js.map"
+    "main.98abf5a5.css.map": "/myprogress/static/css/main.98abf5a5.css.map",
+    "main.4a408d0b.js.map": "/myprogress/static/js/main.4a408d0b.js.map",
+    "reactPlayerYouTube.83422770.chunk.js.map": "/myprogress/static/js/reactPlayerYouTube.83422770.chunk.js.map",
+    "reactPlayerSoundCloud.cb15c334.chunk.js.map": "/myprogress/static/js/reactPlayerSoundCloud.cb15c334.chunk.js.map",
+    "reactPlayerVimeo.e0cd3ac1.chunk.js.map": "/myprogress/static/js/reactPlayerVimeo.e0cd3ac1.chunk.js.map",
+    "reactPlayerFacebook.70ff6081.chunk.js.map": "/myprogress/static/js/reactPlayerFacebook.70ff6081.chunk.js.map",
+    "reactPlayerStreamable.a4a2d607.chunk.js.map": "/myprogress/static/js/reactPlayerStreamable.a4a2d607.chunk.js.map",
+    "reactPlayerWistia.042bd77c.chunk.js.map": "/myprogress/static/js/reactPlayerWistia.042bd77c.chunk.js.map",
+    "reactPlayerTwitch.4a49ad3b.chunk.js.map": "/myprogress/static/js/reactPlayerTwitch.4a49ad3b.chunk.js.map",
+    "reactPlayerDailyMotion.b71288ba.chunk.js.map": "/myprogress/static/js/reactPlayerDailyMotion.b71288ba.chunk.js.map",
+    "reactPlayerMixcloud.b00979d5.chunk.js.map": "/myprogress/static/js/reactPlayerMixcloud.b00979d5.chunk.js.map",
+    "reactPlayerVidyard.2a41570b.chunk.js.map": "/myprogress/static/js/reactPlayerVidyard.2a41570b.chunk.js.map",
+    "reactPlayerKaltura.d75b0fbd.chunk.js.map": "/myprogress/static/js/reactPlayerKaltura.d75b0fbd.chunk.js.map",
+    "reactPlayerFilePlayer.1316f7a6.chunk.js.map": "/myprogress/static/js/reactPlayerFilePlayer.1316f7a6.chunk.js.map",
+    "reactPlayerPreview.65590bad.chunk.js.map": "/myprogress/static/js/reactPlayerPreview.65590bad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87503526.css",
-    "static/js/main.3a9d57c2.js"
+    "static/css/main.98abf5a5.css",
+    "static/js/main.4a408d0b.js"
   ]
 }
