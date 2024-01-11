@@ -22,7 +22,7 @@ const App = () => {
       <aside className="fixed left-[3%] z-40 transition-transform translate-x-0 ">
         <Sidebare toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </aside>
-      <main className="h-screen rounded-md pr-[10%] pl-[10%] pt-32 sm:pt-10 sm:pl-[25%] overflow-auto  overflow-x-hidden">
+      <main className="h-screen rounded-md px-[10px] lg:px-[50px] sm:pl-[15%] sm:pr-[5%] pt-32 sm:pt-10 lg:pl-[26%] overflow-auto  overflow-x-hidden">
         <Outlet />
       </main>
     </div>

@@ -7,6 +7,7 @@ import NotFoundPage from "./components/errors/NotFoundPage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import AnimeTracker from "./components/AnimeTracker";
+import AboutMe from "./components/AboutMe";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
           {
             path: "animetracker",
             element: <AnimeTracker />,
+          },
+          {
+            path: "aboutme",
+            element: <AboutMe />,
           },
         ],
       },

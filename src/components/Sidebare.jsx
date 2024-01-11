@@ -1,6 +1,6 @@
 import { FaHome, FaMoon, FaSun, FaInfo, FaBars } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
-import { GrContact } from "react-icons/gr";
+
 import { FaCircleUser } from "react-icons/fa6";
 
 import { classes } from "../utils";
@@ -13,8 +13,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
       ********** */
   const nav = [
     { text: "Home", url: "/home", icon: <FaHome /> },
-    { text: "About me", url: "/about", icon: <FaInfo /> },
-    { text: "Contact me", url: "/contact", icon: <GrContact /> },
+    { text: "About me", url: "/aboutme", icon: <FaInfo /> },
   ];
   const projectsNav = [
     { text: "User manager", url: "/usermanager", icon: <MdManageAccounts /> },
@@ -48,8 +47,8 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <div
       className={classes(
-        "py-3 items-center w-[230px] lg:items-stretch justify-between px-2 lg:px-4 dark:text-dark-text  translate-y-14 flex flex-col  shadow-md rounded-md bg-white  dark:bg-dark-component",
-        isDarkMode && "bg-dark-component rounded-md"
+        "py-3 items-center lg:w-[230px] lg:items-stretch justify-between px-2 lg:px-4 dark:text-dark-text  translate-y-14 flex flex-col  shadow-sm rounded-md bg-white  dark:bg-dark-background",
+        isDarkMode && " rounded-md"
       )}
     >
       {/* Button to show menu in small width */}
