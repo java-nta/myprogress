@@ -6,7 +6,7 @@ import { FaCircleUser } from "react-icons/fa6";
 import { classes } from "../utils";
 import Linkcore from "./core/Linkcore";
 import { useState } from "react";
-import { SiPivotaltracker } from "react-icons/si";
+
 const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
   /*  *********
       Navigation links
@@ -17,11 +17,12 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
   ];
   const projectsNav = [
     { text: "User manager", url: "/usermanager", icon: <MdManageAccounts /> },
-    {
-      text: "Anime Tracker",
-      url: "/animetracker",
-      icon: <SiPivotaltracker />,
-    },
+    // {
+    //   text: "Anime Tracker",
+    //   url: "/animetracker",
+    //   icon: <SiPivotaltracker />,
+    //   isDisable: true
+    // },
   ];
   const settingsNav = [
     {
@@ -85,7 +86,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
           <ul>
             {projectsNav.map((i) => (
               <li key={i.text} className="my-2">
-                <Linkcore text={i.text} url={i.url} icon={i.icon} />
+                <Linkcore text={i.text} url={i.url} icon={i.icon} isDarkMode={i.isDisable} />
               </li>
             ))}
           </ul>

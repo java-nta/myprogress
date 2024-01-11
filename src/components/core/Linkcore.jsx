@@ -3,7 +3,7 @@ import { classes } from "../../utils";
 
 const Linkcore = ({ text, url, icon, clickhandler = () => {}, style = {} }) => {
   const loc = useLocation();
-  const isActive = loc.pathname === url;
+  const isActive = loc.pathname === process.env.PUBLIC_URL + url;
   return (
     <>
       {url ? (

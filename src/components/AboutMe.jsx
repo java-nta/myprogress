@@ -106,15 +106,18 @@ const AboutMe = () => {
       <div className=" my-10 flex flex-col justify-center gap-4 flex-wrap border rounded-2xl w-full border-gray-300 dark:border-gray-700 p-3">
         <h2 className="text-lg font-bold">Experiences</h2>
         <p className="mb-5">
-          I have only one professional experience, I was an intern in Sofac
-          casablanca for two month, There I knew Spring boot and how the team
-          work. Right now I'm locking for side project to improve my skills. I'm
-          also a fast learner and I like to work with a team.
+          I was an intern in Sofac casablanca for two month, There I knew Spring
+          boot and how the team work. Right now I'm locking for side project to
+          improve my skills. I'm also a fast learner and I like to work with a
+          team.
         </p>
       </div>
-      <div className="relative my-10 flex flex-col justify-center gap-4 flex-wrap  rounded-2xl w-full p-3">
+      <div className="group relative my-10 flex flex-col justify-center gap-4 flex-wrap  rounded-2xl w-full p-3">
         <h2 className="text-lg font-bold">Skills</h2>
-        <div className="grid grid-cols-4 gap-4">
+        <p className="p-2 border border-red-700 rounded-md w-fit text-red-700">
+          Not done yet
+        </p>
+        <div className="grid sm:grid-cols-3  gap-4">
           {skills.map((item, i) => (
             <motion.div
               key={item.id}
@@ -129,7 +132,9 @@ const AboutMe = () => {
             </motion.div>
           ))}
         </div>
-        <p className="text-center text-gray-100">Tap to view skill details</p>
+        <p className="text-center text-gray-100 group-hover:text-dark-background smooth-transition">
+          Tap to view skill details
+        </p>
         <AnimatePresence>
           {selectedId && (
             <motion.div
@@ -179,19 +184,31 @@ const AboutMe = () => {
         </div>
 
         <div className="sm:col-span-4 col-span-6 overflow-hidden rounded-2xl">
-          <Contactcore _video={"/images/assets/video1.mp4"} />
+          <Contactcore
+            _video={"/images/assets/video1.mp4"}
+            url={"https://www.youtube.com/channel/UC-wY2DL3HKBBDBJZF3tNWdw"}
+          />
         </div>
         <div className="sm:col-span-4 col-span-6">
           <Contactcore img={"/images/assets/_email.png"} />
         </div>
         <div className="sm:col-span-2 sm:row-span-2 col-span-6">
-          <Contactcore img={"/images/assets/facebook.png"} />
+          <Contactcore
+            img={"/images/assets/facebook.png"}
+            url={"https://www.facebook.com/med.otaku73/"}
+          />
         </div>
         <div className="sm:col-span-2 col-span-6">
-          <Contactcore img={"/images/assets/linkdin.png"} />
+          <Contactcore
+            img={"/images/assets/linkdin.png"}
+            url={"https://www.linkedin.com/in/java-nta-8153832a5/"}
+          />
         </div>
         <div className="sm:col-span-2 col-span-6">
-          <Contactcore img={"/images/assets/instagram.png"} />
+          <Contactcore
+            img={"/images/assets/instagram.png"}
+            url={"https://www.instagram.com/medo.rox/"}
+          />
         </div>
       </div>
     </Page>

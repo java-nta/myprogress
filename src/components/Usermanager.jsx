@@ -36,7 +36,7 @@ const Usermanager = () => {
       {isLoading ? (
         <div
           role="status"
-          className="w-full pt-[30%] flex items-center justify-center"
+          className="h-[500px]  flex items-center justify-center"
         >
           <svg
             aria-hidden="true"

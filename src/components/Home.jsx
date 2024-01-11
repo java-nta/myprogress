@@ -1,6 +1,7 @@
 import { SiSpring, SiTailwindcss } from "react-icons/si";
 import Cardcore from "./core/Cardcore";
 import Page from "./layout/Page";
+import { FiFramer } from "react-icons/fi";
 
 import { FaReact } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -26,6 +27,16 @@ const Home = () => {
               icon={<FaReact />}
               body="
             React.js is a powerful JavaScript library used for building user interfaces. It's known for its component-based architecture, which allows developers to create encapsulated, reusable UI elements"
+            />
+          </NavLink>
+        </div>
+        <div className="w-full md:w-96">
+          <NavLink to={"https://www.framer.com/motion/"} target="_blank">
+            <Cardcore
+              title={"Frame motion"}
+              icon={<FiFramer />}
+              body="
+                Framer Motion is a React animation library that makes it easy to add smooth and interactive animations to web applications. With a simple syntax, it allows developers to create dynamic user interfaces effortlessly. Whether animating components, transitions between pages, or responding to user interactions, Framer Motion enhances the overall user experience by providing a flexible and intuitive solution for animation in React. "
             />
           </NavLink>
         </div>

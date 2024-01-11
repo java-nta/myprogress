@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import ReactPlayer from "react-player";
 import { NavLink } from "react-router-dom";
-const Contactcore = ({ img, _video }) => {
+const Contactcore = ({ img, _video, url }) => {
   return (
     <motion.div className="relative h-[250px] sm:h-full flex justify-center items-center border rounded-2xl w-full   border-gray-300 dark:border-gray-700 cursor-pointer">
       {img && (
@@ -30,7 +30,7 @@ const Contactcore = ({ img, _video }) => {
         whileHover={{ scale: 0.9 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <NavLink>
+        <NavLink to={url} target="_blank">
           <FaExternalLinkAlt className="text-gray-400" />
         </NavLink>
       </motion.div>
