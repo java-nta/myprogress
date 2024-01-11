@@ -180,7 +180,7 @@ const AboutMe = () => {
       </h2>
       <div className="grid grid-cols-6  grid-flow-row gap-4 my-10 sm:h-screen">
         <div className="sm:col-span-2  col-span-6">
-          <Contactcore img={"/images/assets/_email.png"} />
+          <Contactcore img={"/images/assets/email.png"} />
         </div>
 
         <div className="sm:col-span-4 col-span-6 overflow-hidden rounded-2xl">
