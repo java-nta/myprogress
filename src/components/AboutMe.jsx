@@ -213,7 +213,7 @@ const AboutMe = () => {
                 </div>
                 <div className="flex items-center gap-1 px-10 my-2">
                   <span className="text-sm text-gray-400">level: </span>
-                  <p className="text-sm font-bold bg-dark-component p-0.5 rounded-md">
+                  <p className="text-sm font-bold bg-gray-300 dark:bg-dark-component p-0.5 rounded-md">
                     {selectedId.nv}
                   </p>
                 </div>
