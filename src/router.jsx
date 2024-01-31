@@ -8,6 +8,10 @@ import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import AnimeTracker from "./components/AnimeTracker";
 import AboutMe from "./components/AboutMe";
+import BlackJack from "./components/BlackJack";
+import Connections from "./components/Connections";
+import { Profil } from "./components/Profil";
+import Test from "./components/Test";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +41,22 @@ export const router = createBrowserRouter([
           {
             path: "aboutme",
             element: <AboutMe />,
+          },
+          {
+            path: "blackjack",
+            element: <BlackJack />,
+          },
+          {
+            path: "testing",
+            element: <Test />,
+          },
+          {
+            path: "connections",
+            element: <Connections />,
+          },
+          {
+            path: "profil",
+            element: <Profil />,
           },
         ],
       },

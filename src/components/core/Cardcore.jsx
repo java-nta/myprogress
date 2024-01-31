@@ -4,7 +4,7 @@ const Cardcore = ({ icon, title, body }) => {
   return (
     <div
       className={classes(
-        "flex flex-col w-full h-full transition duration-300 ease-in-out cursor-pointer items-center p-2 border rounded-md gap-y-3 hover:translate-y-4"
+        "flex flex-col w-full h-full transition duration-300 ease-in-out cursor-pointer items-center p-2 border rounded-md  gap-y-3 hover:translate-y-4"
       )}
     >
       <span className="text-7xl">{icon}</span>

@@ -1,8 +1,16 @@
-import { FaHome, FaMoon, FaSun, FaInfo, FaBars } from "react-icons/fa";
+import {
+  FaHome,
+  FaMoon,
+  FaSun,
+  FaInfo,
+  FaBars,
+  FaLink,
+  FaNode,
+} from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 
-import { FaCircleUser } from "react-icons/fa6";
-
+import { FaCircleUser, FaGear } from "react-icons/fa6";
+import { GiCardAceClubs } from "react-icons/gi";
 import { classes } from "../utils";
 import Linkcore from "./core/Linkcore";
 import { useState } from "react";
@@ -17,6 +25,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
   ];
   const projectsNav = [
     { text: "User manager", url: "/usermanager", icon: <MdManageAccounts /> },
+    { text: "Connections", url: "/connections", icon: <FaLink /> },
     // {
     //   text: "Anime Tracker",
     //   url: "/animetracker",
@@ -37,7 +46,12 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
             icon: "text-yellow-300",
           },
     },
-    { text: "Profil", url: "/login", icon: <FaCircleUser /> },
+    { text: "Testing", url: "/testing", icon: <FaGear /> },
+    { text: "Profil", url: "/profil", icon: <FaCircleUser /> },
+    { text: "Login", url: "/login", icon: <FaNode /> },
+  ];
+  const gamesNav = [
+    { text: "BlackJack", url: "/blackjack", icon: <GiCardAceClubs /> },
   ];
   // MENU TOGGLE
   const [isToggled, setIsToggled] = useState(false);
@@ -86,7 +100,35 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
           <ul>
             {projectsNav.map((i) => (
               <li key={i.text} className="my-2">
-                <Linkcore text={i.text} url={i.url} icon={i.icon} isDarkMode={i.isDisable} />
+                <Linkcore
+                  text={i.text}
+                  url={i.url}
+                  icon={i.icon}
+                  isDarkMode={i.isDisable}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div
+          className={classes(
+            "flex-col  sm:flex",
+            isToggled ? "block" : "hidden"
+          )}
+        >
+          <p className="dark:text-gray-200 hidden lg:block">Games</p>
+          <ul>
+            {gamesNav.map((i) => (
+              <li key={i.text} className="my-2">
+                <Linkcore
+                  text={i.text}
+                  url={i.url}
+                  icon={i.icon}
+                  clickhandler={i.clickhandler}
+                  style={i.style}
+                />
               </li>
             ))}
           </ul>

@@ -84,18 +84,15 @@ const AboutMe = () => {
         animate="load"
       >
         <img
-          src={process.env.PUBLIC_URL + "/images/assets/kenma.jpg"}
+          src={process.env.PUBLIC_URL + "/images/assets/me.png"}
           alt="log"
-          className="max-h-[200px] rounded-full border-2 border-gray-300 dark:border-gray-700 "
+          className="max-h-[200px] rounded-full  border-2 border-gray-300 dark:border-gray-700 "
         />
         <div className="flex flex-col h-ful sm:w-2/3 ">
-          <p className="text-2xl">
-            Hey everyone, I'm Mohamed Assedmer and my neckname is @medo.rox
-          </p>
+          <p className="text-2xl">Hey everyone, I'm Mohamed Assedmer.</p>
           <p>
-            I was born on April 20, 2003, and, like Adolf Hitler, I share the
-            same birthdate. However, my passion lies in technology, and I am a
-            full-stack developer. My primary tools for crafting dynamic and
+            I was born on April 20, 2003, my passion lies in technology, and I
+            am a full-stack developer. My primary tools for crafting dynamic and
             responsive web applications include React.js for the frontend,
             Spring Boot for server-side development, and a blend of Tailwind CSS
             and Bootstrap for styling. I am enthusiastic about creating seamless
@@ -157,8 +154,7 @@ const AboutMe = () => {
           I was an intern in Sofac casablanca for two month, There I knew Spring
           boot and how the team work. Right now I'm locking for side project to
           improve my skills. I'm also a fast learner and I like to work with a
-          team. <br />I work it many projects by myself and these one is the
-          result.
+          team. <br />I worked in many side project.
         </p>
       </motion.div>
       {/* SKILLS */}
@@ -170,8 +166,9 @@ const AboutMe = () => {
               key={item.id}
               initial={{ y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}
-              className="col-span-1  h-[250px] cursor-pointer"
+              className="col-span-1  h-[250px] cursor-pointer "
               exit={{ scale: 0 }}
               onClick={() => setSelectedId(item)}
             >
@@ -226,9 +223,7 @@ const AboutMe = () => {
         </AnimatePresence>
       </div>
       {/* SOCIAL MEDIA */}
-      <h2 className="text-xl font-m">
-        You can check my social media to know me more:
-      </h2>
+      <h2 className="text-xl font-m">You can check my social media:</h2>
       <div className="grid grid-cols-6  grid-flow-row gap-4 my-10 sm:h-screen">
         <div className="sm:col-span-2  col-span-6">
           <Contactcore
