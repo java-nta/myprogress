@@ -1,12 +1,4 @@
-import {
-  FaHome,
-  FaMoon,
-  FaSun,
-  FaInfo,
-  FaBars,
-  FaLink,
-  FaNode,
-} from "react-icons/fa";
+import { FaHome, FaMoon, FaSun, FaInfo, FaBars, FaNode } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 
 import { FaCircleUser, FaGear } from "react-icons/fa6";
@@ -25,13 +17,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
   ];
   const projectsNav = [
     { text: "User manager", url: "/usermanager", icon: <MdManageAccounts /> },
-    { text: "Connections", url: "/connections", icon: <FaLink /> },
-    // {
-    //   text: "Anime Tracker",
-    //   url: "/animetracker",
-    //   icon: <SiPivotaltracker />,
-    //   isDisable: true
-    // },
+    // { text: "Connections", url: "/connections", icon: <FaLink /> },
   ];
   const settingsNav = [
     {

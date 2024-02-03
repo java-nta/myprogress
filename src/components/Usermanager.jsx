@@ -1,4 +1,4 @@
-import { FaCheck, FaDatabase, FaPlus, FaSearch, FaTrash } from "react-icons/fa";
+import { FaCheck, FaPlus, FaSearch, FaTrash } from "react-icons/fa";
 import Page from "./layout/Page";
 import { MdAdd } from "react-icons/md";
 import { useEffect, useState } from "react";
@@ -40,7 +40,7 @@ const Usermanager = () => {
         >
           <svg
             aria-hidden="true"
-            class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+            className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
             viewBox="0 0 100 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const Usermanager = () => {
               fill="currentFill"
             />
           </svg>
-          <span class="sr-only">Loading...</span>
+          <span className="sr-only">Loading...</span>
         </div>
       ) : (
         <>
@@ -81,7 +81,7 @@ const Usermanager = () => {
                         type="text"
                         name="username"
                         id="username"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
                         placeholder="Enter username"
                         required=""
                       />
@@ -91,7 +91,7 @@ const Usermanager = () => {
                         type="text"
                         name="email"
                         id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
                         placeholder="Enter email"
                         required=""
                       />
@@ -101,7 +101,7 @@ const Usermanager = () => {
                         type="text"
                         name="password"
                         id="password"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
                         placeholder="enter password"
                         required=""
                       />
@@ -137,7 +137,7 @@ const Usermanager = () => {
                         type="number"
                         name="id"
                         id="id"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600  block w-full p-2.5 dark:border-2 dark:bg-dark-backgroundL dark:border-dark-background dark:placeholder-gray-400 dark:text-white outline-none "
                         placeholder="Enter user id"
                         required=""
                       />
@@ -147,14 +147,7 @@ const Usermanager = () => {
               </Modalcore>
             </div>
           )}
-          <Page
-            title={
-              <h2 className="flex items-center gap-2">
-                <FaDatabase />
-                <span>User manager</span>
-              </h2>
-            }
-          >
+          <Page title={"User manager"}>
             <p className="border-2 rounded-md border-red-500 text-red-500 p-2 w-fit">
               No backend service
             </p>
