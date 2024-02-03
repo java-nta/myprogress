@@ -158,7 +158,7 @@ const BlackJack = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.3 }}
                   exit={{ y: -10, opacity: 0 }}
-                  className="p-2 bg-gray-100 text-gray-500 border rounded-md absolute w-[500px] top-20 dark:bg-dark-component dark:border-dark-backgroundL"
+                  className="p-2 bg-gray-100 text-gray-500 border rounded-md absolute  top-20 dark:bg-dark-component dark:border-dark-backgroundL w-[250px] sm:w-[500px]"
                 >
                   <p>
                     Aim for a hand value close to 21 without going over. Cards

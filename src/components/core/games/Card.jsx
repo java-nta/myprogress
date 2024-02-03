@@ -12,13 +12,13 @@ const Card = ({ index, isUpcard = false, animate = false }) => {
         <img
           src={process.env.PUBLIC_URL + "/games/cards/1B.svg"}
           alt={cardInfo.value + ""}
-          className="h-[150px]"
+          className="sm:h-[150px] h-[100px]  "
         />
       ) : (
         <img
           src={process.env.PUBLIC_URL + "/games/cards/" + cardInfo.svg}
           alt={cardInfo.value + ""}
-          className="h-[150px]"
+          className="sm:h-[150px] h-[100px]"
         />
       )}
     </motion.div>
@@ -28,13 +28,13 @@ const Card = ({ index, isUpcard = false, animate = false }) => {
         <img
           src={process.env.PUBLIC_URL + "/games/cards/1B.svg"}
           alt={cardInfo.value + ""}
-          className="h-[150px]"
+          className="sm:h-[150px] h-[100px]"
         />
       ) : (
         <img
           src={process.env.PUBLIC_URL + "/games/cards/" + cardInfo.svg}
           alt={cardInfo.value + ""}
-          className="h-[150px]"
+          className="sm:h-[150px] h-[100px]"
         />
       )}
     </motion.div>
