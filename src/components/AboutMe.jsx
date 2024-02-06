@@ -16,7 +16,7 @@ const AboutMe = () => {
       nv: "Expert",
       img: "/images/assets/aftereffect.png",
       description:
-        "I spent 3 years of editing AMV(Anime music video), it's a hard category to master. But I get the main concepts, I had fun while editing and I still. Since you click on these skill why not go check the video below me.😊",
+        "🎬 With years of experience mastering After Effects, I've honed my skills to perfection in crafting visually stunning AMVs. Explore the seamless integration of animation and music, brought to life through the power of After Effects. Click the link below to experience the magic of anime like never before! ",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const AboutMe = () => {
       nv: "Medium",
       img: "/images/assets/react.png",
       description:
-        "I have one year of coding using React Js, I know all main concepts and also this app is developed using reactjs so ...",
+        "💻 As a devoted enthusiast of React.js, I've spent a dedicated year mastering both front-end and back-end development. This app is a testament to that commitment, meticulously crafted with React.js to deliver a seamless user experience. Click the link below to explore the synergy of technology and innovation! 🚀 ",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const AboutMe = () => {
       nv: "Medium",
       img: "/images/assets/spring.png",
       description:
-        "Me I love java, especially the OOP concept so spring was the alternative choice for laravel, I Ain't gonna lie it was very hard to understand it but I still learning. Right now I can setup security config with an JWT Token , the User Details Services and Authentication and some more stuff. ",
+        "💼 With a year dedicated to mastering Spring Boot, I've delved deep into topics such as authentication using UserDetails service with roles, implementing JPA CRUD operations, and effective exception handling. This project showcases the culmination of that expertise. Click the link below to witness the power of seamless backend solutions! 🔒",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const AboutMe = () => {
       nv: "Expert",
       img: "/images/assets/tailwind.png",
       description:
-        "Tailwind is my next choice after using Bootstrap. This app is style it using Tailwind so ...",
+        "🎨 As a seasoned designer, I've mastered both CSS and Bootstrap, but it's Tailwind CSS that truly captivates me. With its innovative approach to styling, Tailwind CSS offers a refreshing alternative to traditional CSS and Bootstrap. Click the link below to experience the seamless fusion of functionality and aesthetics! ✨",
     },
     {
       id: 5,
@@ -48,14 +48,15 @@ const AboutMe = () => {
       nv: "Expert",
       img: "/images/assets/bootstrap.png",
       description:
-        "Bootstrap is my first CSS lib while I was learn more about dev. It was very helpful and I enjoyed coding using it",
+        "🎨 As a seasoned designer, I've honed my skills with CSS and Bootstrap, mastering their intricacies. Yet, it's Bootstrap that truly resonates with me for its robust framework and versatile components. Click the link below to explore how Bootstrap elevates web design to new heights! ✨",
     },
     {
       id: 6,
       title: "Frame motion",
       nv: "Beginner",
       icon: <FiFramer className="text-[42px]" />,
-      description: "I use Frame Motion in this project just to practice.",
+      description:
+        "💫 While still in the early stages of learning, I've already begun to harness the power of Framer Motion to bring my app to life with captivating animations. Click the link below to experience the seamless fusion of technology and creativity! 🎥 ",
     },
   ];
   const divAnimation = {
