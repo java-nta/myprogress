@@ -84,11 +84,14 @@ const AboutMe = () => {
         variants={divAnimation}
         animate="load"
       >
-        <img
-          src={process.env.PUBLIC_URL + "/images/assets/me.png"}
-          alt="log"
-          className="max-h-[200px] rounded-full  border-2 border-gray-300 dark:border-gray-700 "
-        />
+        <div className="w-[150px] h-[150px] border-2 rounded-full overflow-hidden">
+          <img
+            src={process.env.PUBLIC_URL + "/images/assets/me.png"}
+            alt="log"
+            className="object-cover scale-150 border-gray-300 dark:border-gray-700"
+          />
+        </div>
+
         <div className="flex flex-col h-ful sm:w-2/3 ">
           <p className="text-2xl">Hey everyone, I'm Mohamed Assedmer.</p>
           <p>
