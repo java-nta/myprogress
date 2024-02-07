@@ -13,18 +13,18 @@
   @apply transition duration-300 ease-in-out;
 }
 ::-webkit-scrollbar {
-  width: 8px; /* For Chrome, Safari, etc. */
+  width: 0px; /* For Chrome, Safari, etc. */
 }
 ::-moz-scrollbar {
-  width: 8px; /* For Firefox */
+  width: 0px; /* For Firefox */
 }
 
 /* Set the scrollbar track color */
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
+  background-color: transparent;
 }
 ::-moz-scrollbar-track {
-  background-color: #f1f1f1;
+  background-color: transparent;
 }
 
 /* Set the scrollbar thumb (handle) color */

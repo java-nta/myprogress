@@ -12,6 +12,7 @@ import BlackJack from "./components/BlackJack";
 import Connections from "./components/Connections";
 import { Profil } from "./components/Profil";
 import Test from "./components/Test";
+import Chat from "./components/Chat";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ export const router = createBrowserRouter([
           {
             path: "profil",
             element: <Profil />,
+          },
+          {
+            path: "chat",
+            element: <Chat />,
           },
         ],
       },

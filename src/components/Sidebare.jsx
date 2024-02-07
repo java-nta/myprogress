@@ -1,6 +1,6 @@
 import { FaHome, FaMoon, FaSun, FaInfo, FaBars, FaNode } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
-
+import { IoIosChatbubbles } from "react-icons/io";
 import { FaCircleUser, FaGear } from "react-icons/fa6";
 import { GiCardAceClubs } from "react-icons/gi";
 import { classes } from "../utils";
@@ -16,6 +16,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
     { text: "About me", url: "/aboutme", icon: <FaInfo /> },
   ];
   const projectsNav = [
+    { text: "Chat App", url: "/chat", icon: <IoIosChatbubbles /> },
     { text: "User manager", url: "/usermanager", icon: <MdManageAccounts /> },
     // { text: "Connections", url: "/connections", icon: <FaLink /> },
   ];
