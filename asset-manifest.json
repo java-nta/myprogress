@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myprogress/static/css/main.405316fb.css",
-    "main.js": "/myprogress/static/js/main.8c69f258.js",
+    "main.css": "/myprogress/static/css/main.254b1dce.css",
+    "main.js": "/myprogress/static/js/main.e9689e6f.js",
     "reactPlayerYouTube.js": "/myprogress/static/js/reactPlayerYouTube.83422770.chunk.js",
     "reactPlayerSoundCloud.js": "/myprogress/static/js/reactPlayerSoundCloud.cb15c334.chunk.js",
     "reactPlayerVimeo.js": "/myprogress/static/js/reactPlayerVimeo.e0cd3ac1.chunk.js",
@@ -16,8 +16,8 @@
     "reactPlayerFilePlayer.js": "/myprogress/static/js/reactPlayerFilePlayer.1316f7a6.chunk.js",
     "reactPlayerPreview.js": "/myprogress/static/js/reactPlayerPreview.65590bad.chunk.js",
     "index.html": "/myprogress/index.html",
-    "main.405316fb.css.map": "/myprogress/static/css/main.405316fb.css.map",
-    "main.8c69f258.js.map": "/myprogress/static/js/main.8c69f258.js.map",
+    "main.254b1dce.css.map": "/myprogress/static/css/main.254b1dce.css.map",
+    "main.e9689e6f.js.map": "/myprogress/static/js/main.e9689e6f.js.map",
     "reactPlayerYouTube.83422770.chunk.js.map": "/myprogress/static/js/reactPlayerYouTube.83422770.chunk.js.map",
     "reactPlayerSoundCloud.cb15c334.chunk.js.map": "/myprogress/static/js/reactPlayerSoundCloud.cb15c334.chunk.js.map",
     "reactPlayerVimeo.e0cd3ac1.chunk.js.map": "/myprogress/static/js/reactPlayerVimeo.e0cd3ac1.chunk.js.map",
@@ -33,7 +33,7 @@
     "reactPlayerPreview.65590bad.chunk.js.map": "/myprogress/static/js/reactPlayerPreview.65590bad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.405316fb.css",
-    "static/js/main.8c69f258.js"
+    "static/css/main.254b1dce.css",
+    "static/js/main.e9689e6f.js"
   ]
 }
