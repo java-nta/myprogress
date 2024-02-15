@@ -162,7 +162,7 @@ const AboutMe = () => {
         </p>
       </motion.div>
       {/* SKILLS */}
-      <div className="group relative my-10 flex flex-col justify-center gap-4 flex-wrap  rounded-2xl w-full p-3">
+      <div className="group relative my-10 flex flex-col justify-center gap-4 flex-wrap  rounded-2xl w-full p-3 overflow-hidden">
         <h2 className="text-lg font-bold">Skills</h2>
         <div className="grid sm:grid-cols-3  gap-4">
           {skills.map((item, i) => (
@@ -191,7 +191,7 @@ const AboutMe = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
               exit={{ opacity: 0, scale: 0 }}
-              className="absolute  bg-white dark:bg-dark-background h-full w-full flex items-center justify-center rounded-lg h-[250px]shadow-xl"
+              className="absolute  bg-white dark:bg-dark-background h-full w-[100%] flex items-center justify-center rounded-lg h-[250px]shadow-xl"
             >
               <div className="w-[80%] border border-gray-300 dark:border-gray-700 rounded-xl p-3 flex flex-col">
                 <div className="relative w-full flex items-center justify-between px-10">

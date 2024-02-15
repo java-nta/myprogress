@@ -6,7 +6,6 @@ const ErrorPage = ({ code, message, icon, style, erroIcon }) => {
   const goBack = () => {
     window.history.back();
   };
-  console.log(isDarkMode);
   return (
     <div
       className={classes(
@@ -14,7 +13,6 @@ const ErrorPage = ({ code, message, icon, style, erroIcon }) => {
         isDarkMode ? "dark" : "light"
       )}
     >
-
       <h1 className="text-2xl font-bold">
         {code}
         <span className="dark:text-white">{erroIcon}</span>

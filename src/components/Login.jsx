@@ -3,48 +3,71 @@ import AuthPage from "./layout/AuthPage";
 import { FaEye } from "react-icons/fa";
 import { useState } from "react";
 import { classes } from "../utils";
+import { useAuth } from "../context/AuthProvider";
 
 const Login = () => {
+  // handle Inputs
+  const [inputs, setInputs] = useState({
+    username: "",
+    password: "",
+  });
+
+  const changeInputs = (e) => {
+    setInputs({ ...inputs, [e.target.name]: e.target.value });
+  };
+
+  // handle the password
   const [showPassword, setShowPassword] = useState(false);
   const [type, setType] = useState("password");
   const toggleShowPassword = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
     setType((prevType) => (prevType === "password" ? "text" : "password"));
   };
+
+  // handle the login
+  const { getToken } = useAuth();
+  const login = (e) => {
+    e.preventDefault();
+    getToken(inputs.username, inputs.password);
+  };
   return (
     <AuthPage title={"Login"} message={"Welcome back. enter your credentials"}>
-      <form action="">
+      <form action="" onSubmit={login}>
         <div className="flex flex-col gap-2">
           <div className="flex flex-col">
             <label
-              for="username"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              htmlFor="username"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Username
             </label>
             <input
+              value={inputs.username}
+              onChange={changeInputs}
               type="text"
               name="username"
               id="username"
-              class="text-[16px] font-medium bg-gray-50 border-2 border-gray-200 text-gray-900 text-sm rounded-md  w-full p-2.5  "
+              className="text-[16px] font-medium bg-gray-50 border-2 border-gray-200 text-gray-900 text-sm rounded-md  w-full p-2.5  "
               placeholder="Enter your username"
-              required=""
+              required
             />
           </div>
           <div className="flex flex-col">
             <label
-              for="password"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              htmlFor="password"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Password
             </label>
             <input
+              value={inputs.password}
+              onChange={changeInputs}
               type={type}
               name="password"
               id="password"
-              class="text-[16px] font-medium bg-gray-50 border-2 border-gray-200 text-gray-900 text-sm rounded-md  w-full p-2.5  "
+              className="text-[16px] font-medium bg-gray-50 border-2 border-gray-200 text-gray-900 text-sm rounded-md  w-full p-2.5  "
               placeholder="Enter your password"
-              required=""
+              required
             />
             <div className="flex justify-end items-center mt-2">
               <button
@@ -60,10 +83,7 @@ const Login = () => {
             </div>
           </div>
           <div className="flex flex-col my-3 gap-2">
-            <button
-              type="button"
-              className="w-full smooth-transition bg-blue-500 text-white font-medium rounded-md py-2 hover:scale-95"
-            >
+            <button className="w-full smooth-transition bg-blue-500 text-white font-medium rounded-md py-2 hover:scale-95">
               Login
             </button>
             <NavLink to={process.env.PUBLIC_URL + "/signup"}>

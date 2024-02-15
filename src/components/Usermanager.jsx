@@ -2,7 +2,7 @@ import { FaCheck, FaPlus, FaSearch, FaTrash } from "react-icons/fa";
 import Page from "./layout/Page";
 import { MdAdd } from "react-icons/md";
 import { useEffect, useState } from "react";
-import Toastcore from "./core/Toastcore";
+
 import Modalcore from "./core/Modalcore";
 
 const Usermanager = () => {

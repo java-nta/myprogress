@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const Content = () => {
   return (
-    <div className="w-full ">
+    <div className="h-full">
       <Outlet />
     </div>
   );
