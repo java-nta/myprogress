@@ -20,14 +20,14 @@ const App = () => {
   return (
     <div
       className={classes(
-        "h-screen flex gap-4 py-5 px-3 lg:px-20 relative w-full",
+        "h-screen flex gap-4 py-5 px-3 lg:px-20 relative w-full ",
         isDarkMode ? "dark" : "light"
       )}
     >
       <aside className="sm:relative absolute">
         <Sidebare toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </aside>
-      <main className="w-full my-5 sm:mt-0  mt-32 h-full  overflow-y-auto">
+      <main className="w-full sm:my-0  my-32">
         <Outlet />
       </main>
       {/* <aside className="fixed left-[3%] z-40 transition-transform translate-x-0 ">

@@ -55,9 +55,9 @@ const AuthPage = ({ title, message, children }) => {
         </div>
       ) : (
         <div className="flex flex-col relative bg-white border border-gray-200 p-4 rounded-lg w-[350px]">
-          <p className="border-2  rounded-md border-red-500 text-red-500 p-2 w-fit cursor-pointer smooth-transition hover:bg-red-500 hover:text-white">
+          {/* <p className="border-2  rounded-md border-red-500 text-red-500 p-2 w-fit cursor-pointer smooth-transition hover:bg-red-500 hover:text-white">
             No backend service
-          </p>
+          </p> */}
           <h2 className="font-bold text-[36px] ">{title}</h2>
           <p className="text-gray-400 my-3">{message}</p>
           <div className="flex flex-col">

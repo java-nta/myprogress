@@ -3,14 +3,37 @@ import Page from "./layout/Page";
 import ChatCard from "./core/chat/ChatCard";
 import { motion, AnimatePresence } from "framer-motion";
 import ChatPage from "./layout/ChatPage";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
+import SockJS from "sockjs-client";
+import { over } from "stompjs";
+
+var stompClient = null;
 const Chat = () => {
   const [selectedChat, setSelectedChat] = useState(null);
+  const [connected, setConnected] = useState(false);
   const [userList, setUserList] = useState([
-    { id: 1, username: "Free Palestine", status: "online" },
-    { id: 2, username: "React js", status: "online" },
-    { id: 3, username: "Spring boot", status: "offline" },
+    { id: 1, title: "Free Palestine", status: "online" },
+    { id: 2, title: "React js", status: "online" },
+    { id: 3, title: "Spring boot", status: "offline" },
   ]);
+  const publicChat = { title: "Public Chat", status: null };
+  const onConnected = () => {
+    setConnected(true);
+  };
+
+  const onError = (err) => {
+    console.log(err);
+  };
+
+  useEffect(() => {
+    const connect = () => {
+      let Sock = new SockJS("http://localhost:8080/ws/chat");
+      stompClient = over(Sock);
+      stompClient.connect({}, onConnected, onError);
+    };
+    connect();
+  }, []);
   return (
     <Page title={"Chat app"}>
       <div className="flex gap-2 w-full h-full">
@@ -19,7 +42,6 @@ const Chat = () => {
           {/* New chat button */}
           <div>
             <button
-              onClick={() => setSelectedChat(null)}
               type="button"
               className="p-1.5 bg-black text-white rounded-md dark:bg-white dark:text-black"
             >
@@ -44,6 +66,18 @@ const Chat = () => {
 
           {/* Gap div message */}
           <div>
+            <p className="text-xs dark:text-gray-300 font-light">CHATROOMS</p>
+          </div>
+          <div className="flex flex-col gap-1">
+            <ChatCard
+              receiver={"Public Chat"}
+              _onClick={() => {
+                setSelectedChat(publicChat);
+              }}
+            />
+          </div>
+          {/* Gap div message */}
+          <div>
             <p className="text-xs dark:text-gray-300 font-light">
               RECENT CHATS
             </p>
@@ -53,7 +87,7 @@ const Chat = () => {
             {userList.map((user) => (
               <ChatCard
                 key={user.id}
-                receiver={user.username}
+                receiver={user.title}
                 status={user.status}
                 _onClick={() => {
                   setSelectedChat(user);
@@ -63,7 +97,7 @@ const Chat = () => {
           </div>
         </div>
         {/* main chat */}
-        <div className="w-2/3 flex flex-col p-2 justify-center items-center relative">
+        <div className="w-2/3 h-[600px]">
           <AnimatePresence>
             {selectedChat ? (
               <motion.div
@@ -72,11 +106,15 @@ const Chat = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 exit={{ opacity: 0 }}
-                className="h-full relative"
+                className="flex flex-col h-full relative overflow-auto"
               >
                 <ChatPage
-                  receiver={selectedChat.username}
+                  title={selectedChat.title}
                   status={selectedChat.status}
+                  sendTo={"/app/public"}
+                  subscribeTo={"/topic/public"}
+                  connected={connected}
+                  stomp={stompClient}
                 />
               </motion.div>
             ) : (

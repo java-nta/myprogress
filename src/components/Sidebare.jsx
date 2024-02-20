@@ -42,6 +42,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
   ];
   const profilNav = [
     { text: "Profil", url: "/profil", icon: <FaCircleUser /> },
+    { text: "Testing", url: "/testing", icon: <FaCircleUser /> },
     {
       text: "Log out",
       url: false,
@@ -167,7 +168,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0 }}
-                      className="flex flex-col absolute bg-white dark:bg-dark-background w-full -top-28 rounded-md "
+                      className="flex flex-col absolute bg-white dark:bg-dark-background w-full -top-40 rounded-md "
                     >
                       <ul>
                         {profilNav.map((i) => (

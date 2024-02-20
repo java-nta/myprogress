@@ -1,6 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
-import Content from "./components/Content";
 import App from "./App";
 import Usermanager from "./components/Usermanager";
 import NotFoundPage from "./components/errors/NotFoundPage";
@@ -20,50 +19,44 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {
+        path: "home",
+        element: <Home />,
+      },
+      {
         path: "",
-        element: <Content />,
-        children: [
-          {
-            path: "home",
-            element: <Home />,
-          },
-          {
-            path: "",
-            element: <Navigate to={process.env.PUBLIC_URL + "/home"} />,
-          },
-          {
-            path: "usermanager",
-            element: <Usermanager />,
-          },
-          {
-            path: "animetracker",
-            element: <AnimeTracker />,
-          },
-          {
-            path: "aboutme",
-            element: <AboutMe />,
-          },
-          {
-            path: "blackjack",
-            element: <BlackJack />,
-          },
-          {
-            path: "testing",
-            element: <Test />,
-          },
-          {
-            path: "connections",
-            element: <Connections />,
-          },
-          {
-            path: "profil",
-            element: <Profil />,
-          },
-          {
-            path: "chat",
-            element: <Chat />,
-          },
-        ],
+        element: <Navigate to={process.env.PUBLIC_URL + "/home"} />,
+      },
+      {
+        path: "usermanager",
+        element: <Usermanager />,
+      },
+      {
+        path: "animetracker",
+        element: <AnimeTracker />,
+      },
+      {
+        path: "aboutme",
+        element: <AboutMe />,
+      },
+      {
+        path: "blackjack",
+        element: <BlackJack />,
+      },
+      {
+        path: "testing",
+        element: <Test />,
+      },
+      {
+        path: "connections",
+        element: <Connections />,
+      },
+      {
+        path: "profil",
+        element: <Profil />,
+      },
+      {
+        path: "chat",
+        element: <Chat />,
       },
     ],
   },

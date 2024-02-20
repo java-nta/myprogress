@@ -5,6 +5,7 @@ const { createContext, useState, useEffect, useContext } = require("react");
 
 const AuthContext = createContext({
   token: "",
+  user: {},
   errors: {},
   getToken: () => {},
   logout: () => {},
@@ -20,19 +21,33 @@ export const AuthContextProvider = ({ children }) => {
     setToken(token);
   };
 
+  const [user, setUser] = useState(Cookies.get("user") || null);
+  const _setUser = (username) => {
+    const data = { username: username };
+    Cookies.set("user", data, { expires: 10, secure: true });
+    setUser(data);
+  };
+
   // Get the token from the server
   const getToken = (username, password) => {
     setErrors(null);
     API.post("/auth/login", { username, password })
       .then((response) => {
-        if (response.status === 200) _setToken(response.data.token);
+        if (response.status === 200) {
+          const { token, username } = response.data;
+
+          _setToken(token);
+          _setUser(username);
+        }
       })
       .catch((e) => {
+        console.log(e);
         setErrors(e.response.data);
       });
   };
   const logout = () => {
     Cookies.remove("token");
+    Cookies.remove("user");
     setToken(null);
   };
 
@@ -48,6 +63,7 @@ export const AuthContextProvider = ({ children }) => {
       value={{
         token,
         logout,
+        user,
         getToken,
         errors,
       }}
