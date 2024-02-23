@@ -1,4 +1,4 @@
-import { FaHome, FaMoon, FaSun, FaInfo, FaBars } from "react-icons/fa";
+import { FaHome, FaMoon, FaSun, FaInfo, FaBars, FaPager } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import { IoIosChatbubbles } from "react-icons/io";
 import { IoLogIn, IoLogOut } from "react-icons/io5";
@@ -20,6 +20,7 @@ const Sidebare = ({ toggleDarkMode, isDarkMode }) => {
   ];
   const projectsNav = [
     { text: "Chat App", url: "/chat", icon: <IoIosChatbubbles /> },
+    { text: "Feeds", url: "/feeds", icon: <FaPager /> },
     { text: "User manager", url: "/usermanager", icon: <MdManageAccounts /> },
     // { text: "Connections", url: "/connections", icon: <FaLink /> },
   ];

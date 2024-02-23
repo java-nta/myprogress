@@ -27,7 +27,7 @@ const App = () => {
       <aside className="sm:relative absolute">
         <Sidebare toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </aside>
-      <main className="w-full sm:my-0  my-32">
+      <main className="w-full mt-16  sm:my-0">
         <Outlet />
       </main>
       {/* <aside className="fixed left-[3%] z-40 transition-transform translate-x-0 ">

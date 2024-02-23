@@ -12,6 +12,7 @@ import Connections from "./components/Connections";
 import { Profil } from "./components/Profil";
 import Test from "./components/Test";
 import Chat from "./components/Chat";
+import Feeds from "./components/Feeds";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ export const router = createBrowserRouter([
       {
         path: "chat",
         element: <Chat />,
+      },
+      {
+        path: "feeds",
+        element: <Feeds />,
       },
     ],
   },

@@ -6,6 +6,9 @@
 * {
   font-family: "Poppins";
 }
+html {
+  scroll-behavior: smooth;
+}
 .dark {
   @apply bg-dark-background text-white;
 }

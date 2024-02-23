@@ -9,7 +9,7 @@ const Cardcore = ({ icon, title, body }) => {
     >
       <span className="text-7xl">{icon}</span>
       <h1 className="font-semibold">{title}</h1>
-      <p className="text-center text-sm ">{body}</p>
+      <p className="text-center text-sm font-medium ">{body}</p>
     </div>
   );
 };
